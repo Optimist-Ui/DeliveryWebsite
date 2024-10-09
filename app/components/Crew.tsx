@@ -9,21 +9,21 @@ const Crew = () => {
   const router = useRouter();
   return (
     <div className="my-28">
-      <div className="bg-[url('/assets/images/Background.jpg')] bg-no-repeat mx-[-8rem] relative bg-contain bg-center bg-fixed overflow-hidden rounded-b-[30%]">
+      <div className="bg-[url('/assets/images/Background.jpg')] bg-no-repeat mx-[-8rem] relative bg-contain md:bg-cover bg-center md:bg-fixed overflow-hidden rounded-b-[30%]">
         <div className="text-center bg-[#253138] bg-opacity-75 pb-[15rem] pt-16 text-white">
           <h1 className="font-bold text-4xl my-8">Join The Crew</h1>
         </div>
       </div>
       <div className="text-white my-16">
         <div className="flex mt-[-12.5rem] justify-center flex-col gap-4 text-center items-center">
-          <div className="flex justify-center text-lg items-start relative text-start align-text-bottom gap-12">
+          <div className="flex justify-center md:flex-row flex-col md:text-base text-lg lg:text-lg items-center relative text-center sm:text-start align-text-bottom gap-12">
             <div className="relative">
               <Image
                 src="/assets/images/bicycle.png"
                 alt="alt"
                 width={90}
                 height={90}
-                className="mx-[5%] mb-[-8%] bg-[#e1ecb8] p-2 rounded-xl relative"
+                className="sm:mx-[5%] mx-auto mb-[-8%] bg-[#e1ecb8] p-2 rounded-xl relative"
                 style={{ height: "auto", width: "auto" }}
               />
 
@@ -51,7 +51,7 @@ const Crew = () => {
                 alt="alt"
                 width={90}
                 height={90}
-                className="mx-[5%] mb-[-8%] bg-[#e1ecb8] p-2 rounded-xl relative"
+                className="sm:mx-[5%] mx-auto mb-[-8%] bg-[#e1ecb8] p-2 rounded-xl relative"
                 style={{ height: "auto", width: "auto" }}
               />
               <div className="bg-[#253138] py-8 px-8 rounded-lg">
@@ -78,7 +78,7 @@ const Crew = () => {
                 alt="alt"
                 width={90}
                 height={90}
-                className="mx-[5%] mb-[-8%] bg-[#e1ecb8] p-2 rounded-xl relative"
+                className="sm:mx-[5%] mx-auto mb-[-8%] bg-[#e1ecb8] p-2 rounded-xl relative"
                 style={{ height: "auto", width: "auto" }}
               />
               <div className="bg-[#253138] py-8 px-8 rounded-lg">

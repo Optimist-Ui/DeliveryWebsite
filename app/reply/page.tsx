@@ -60,10 +60,10 @@ const page = () => {
     <div className="text-[#3A3A3A]">
       <NavbarC heading="Specializing In Timely Deliveries   " page="reply" />
       <div className="flex justify-center max-w-[65%] place-content-start  mx-auto items-center flex-col my-12 text-lg gap-4">
-        <h1 className="text-start text-4xl font-bold self-start">
+        <h1 className="text-start text-4xl font-bold self-center sm:self-start">
           Leave A Reply
         </h1>
-        <p className="self-start">
+        <p className="self-center sm:self-start">
           Your email address will not be published. Required fields are marked *
         </p>
         <form

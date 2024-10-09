@@ -11,7 +11,7 @@ type prop = {
 const Card = ({ name, path }: prop) => {
   return (
     <>
-      <div className="text-lg flex justify-center items-center text-center flex-col  pt-8 pb-16 px-24 rounded-lg bg-[#efefef] shadow-2xl">
+      <div className="text-lg flex justify-center my-2 items-center text-center flex-col pt-8 pb-16 px-24 rounded-lg bg-[#efefef] shadow-2xl">
         <Image
           src={`/assets/images/${path}`}
           alt="Profile Pic"
@@ -22,6 +22,7 @@ const Card = ({ name, path }: prop) => {
         />
         <h1 className="font-bold mt-6 text-2xl">{name}</h1>
         <h3 className="text-[#333] mb-6 text-base">Courier</h3>
+
         <div className="flex items-center justify-center gap-2">
           <Link href={"#"}>
             <FaFacebookF

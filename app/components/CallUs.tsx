@@ -8,7 +8,7 @@ const CallUs = () => {
   const router = useRouter();
 
   return (
-    <div className="flex justify-center gap-x-28 items-center text-start bg-white py-16">
+    <div className="flex md:flex-row flex-col justify-center gap-x-28 items-center text-center md:text-start bg-white py-16">
       <div>
         <Image
           src="/assets/images/callsectionimage.png"
@@ -19,7 +19,7 @@ const CallUs = () => {
           style={{ height: "auto", width: "auto" }}
         />
       </div>
-      <div className="text-lg">
+      <div className="lg:text-lg md:text-base text-sm">
         <h1 className="font-bold text-4xl my-5">
           Do You Want A Fast <br /> Service Just Call Us.
         </h1>

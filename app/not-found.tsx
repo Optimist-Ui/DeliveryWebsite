@@ -13,7 +13,7 @@ const NotFound = () => {
       <div className="py-6">
         <NavLinks />
       </div>
-      <div className="bg-[#253138] text-white flex flex-col items-center text-center justify-center gap-8 py-[0.49rem] ">
+      <div className="bg-[#253138] text-white flex flex-col mx-4 items-center text-center justify-center gap-8 py-[0.49rem] ">
         <Image
           src="/assets/images/404.png"
           alt="404"

@@ -9,11 +9,11 @@ const ItemList = () => {
   return (
     <div className="flex justify-center flex-col gap-4 text-center items-center">
       <h1 className="font-bold text-4xl">We Deliver Everything</h1>
-      <p className="mb-12">
+      <p className="mb-12 sm:text-sm tracking-tighter">
         Lorem ipsum dolor, sit amet consectetursit amet consectetur adipisicing
         elit. Ipsam, maiores.
       </p>
-      <div className="flex justify-center text-lg items-center relative text-center align-text-bottom gap-12">
+      <div className="flex justify-center md:flex-row flex-col text-lg items-baseline relative text-center align-text-bottom gap-12">
         <div>
           <Image
             src="/assets/images/burg.png"

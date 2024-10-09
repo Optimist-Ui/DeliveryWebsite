@@ -13,12 +13,12 @@ const page = () => {
   return (
     <div className="overflow-x-hidden">
       <NavbarC page="partner" heading="Be A Partner" />
-      <div className="flex flex-col justify-center items-center text-start my-24 text-lg">
-        <h1 className="font-bold text-5xl my-16 w-[55%]">
+      <div className="flex flex-col justify-center text-center items-center max-w-[50%] mx-auto md:text-start my-24 text-lg">
+        <h1 className="font-bold text-5xl my-16 w-full">
           Choose Your Partnership
         </h1>
-        <div className="flex justify-center items-center text-start gap-12">
-          <div className="flex items-start text-start justify-center flex-col gap-4">
+        <div className="flex md:flex-row flex-col text-center justify-center items-baseline md:text-start gap-12">
+          <div className="flex md:items-start text-center items-center md:text-start justify-center flex-col gap-4">
             <Image
               src="/assets/images/food-1.png"
               alt="alt"
@@ -40,7 +40,7 @@ const page = () => {
               }}
             />
           </div>
-          <div className="flex items-start text-start justify-center flex-col gap-4">
+          <div className="flex md:items-start text-center items-center md:text-start justify-center flex-col gap-4">
             <Image
               src="/assets/images/grocry.png"
               alt="alt"
@@ -63,7 +63,7 @@ const page = () => {
               }}
             />
           </div>
-          <div className="flex items-start text-start justify-center flex-col gap-4">
+          <div className="flex md:items-start text-center items-center md:text-start justify-center flex-col gap-4">
             <Image
               src="/assets/images/londri.png"
               alt="alt"

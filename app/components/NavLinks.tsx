@@ -24,8 +24,8 @@ const NavLinks = () => {
   };
 
   return (
-    <div className="relative flex justify-around items-center text-center text-xl text-white">
-      <div>
+    <div className="relative flex lg:justify-around justify-between lg:px-8 items-center text-center text-xl text-white">
+      <div className="lg:max-w-md md:max-w-[12rem] sm:max-w-[10rem] max-w-[7rem]">
         <Link href={"/"}>
           <Image
             src={"/assets/images/Navbar-logo.png"}
@@ -39,8 +39,8 @@ const NavLinks = () => {
       </div>
 
       {/* Desktop Menu */}
-      <div className="text-lg font-medium hidden sm:block">
-        <ul className="flex items-center text-center justify-center flex-wrap gap-4">
+      <div className="lg:text-lg md:text-base text-sm font-medium hidden sm:block">
+        <ul className="flex items-center text-center justify-center flex-wrap lg:gap-5 gap-2">
           <li className="hover:text-[#f3a13f]">
             <Link href="/">Home</Link>
           </li>
@@ -70,7 +70,7 @@ const NavLinks = () => {
 
             {/* Dropdown menu */}
             {isMenuOpen && (
-              <ul className="absolute left-0 mt-2 w-40 z-10 bg-[#253138] rounded-md shadow-lg">
+              <ul className="absolute left-0 mt-2 w-40  bg-[#253138] rounded-md shadow-lg">
                 <li className="px-4 py-2 hover:text-[#f3a13f]">
                   <Link href="/partner">Be Partner</Link>
                 </li>
@@ -97,27 +97,23 @@ const NavLinks = () => {
             />
           ) : null}
         </div>
-
-        <div className="hidden sm:block">
+        <div className="hidden sm:block ">
           <Link
             href="/contact"
-            className="bg-[#f3a13f] hover:bg-[#e3bf94] text-lg py-2 px-3 rounded-[5%] font-medium"
+            className="bg-[#f3a13f] hover:bg-[#e3bf94] tracking-tighter lg:text-lg text-sm py-2 md:px-3 px-2 rounded-[5%] font-medium"
           >
             Contact Us
           </Link>
         </div>
 
         <div>
-          <FaBell className="text-xl cursor-pointer hover:text-[#aaa]" />
-        </div>
-        <div>
-          <FaUser className="text-xl cursor-pointer hover:text-[#aaa]" />
+          <FaUser className="lg:text-2xl md:text-xl text-base cursor-pointer hover:text-[#aaa]" />
         </div>
       </div>
 
       {/* Sidebar for small screens */}
       {isSidebarOpen && (
-        <div className="fixed inset-y-0 right-0 w-[35%] z-50 bg-white flex flex-col justify-start text-start items-start py-8 px-6 gap-6 sm:hidden shadow-lg transition-transform transform translate-x-0">
+        <div className="fixed inset-y-0 right-0 sm:max-w-[25%] md:w-[45%] z-50 bg-white flex flex-col justify-start text-start items-start py-8 px-6 gap-6 sm:hidden shadow-lg transition-transform transform translate-x-0">
           {/* Close icon inside the sidebar */}
           <FaTimes
             className="text-2xl absolute top-4 right-4 cursor-pointer text-[#333] hover:text-[#333333bf]"
@@ -149,7 +145,7 @@ const NavLinks = () => {
                 onClick={toggleMenu}
               >
                 Pages
-                <FiChevronDown className="ml-16 transform translate-y-[2px]" />
+                <FiChevronDown className="sm:ml-16 ml-8 transform translate-y-[2px]" />
               </div>
               {isMenuOpen && (
                 <ul className="mt-2 rounded-md shadow-md">
@@ -165,10 +161,10 @@ const NavLinks = () => {
                 </ul>
               )}
             </li>
-            <li className="hover:text-[#fa13f] mt-6">
+            <li className="hover:text-[#fa13f] mt-6 sm:ml-0 ml-[-.5rem] text-center">
               <Link
                 href="/contact"
-                className="bg-[#f3a13f] hover:bg-[#e3bf94] text-base py-2 px-2 text-white pr-10 rounded-md font-medium"
+                className="bg-[#f3a13f] hover:bg-[#e3bf94] text-sm sm:text-base  py-2 px-2 text-white sm:pr-10 rounded-md font-medium"
               >
                 Contact Us
               </Link>

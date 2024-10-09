@@ -35,8 +35,8 @@ const NewsLetter = () => {
     setEmail(value.value);
   };
   return (
-    <div className="flex justify-center items-center text-start my-32 gap-32 flex-wrap">
-      <div className="text-lg">
+    <div className="flex justify-center md:flex-row flex-col-reverse mb-32 gap-12 items-center mt-[-6rem] text-center md:text-start py-20">
+      <div className="text-base md:text-lg mx-2">
         <h1 className="font-bold text-5xl my-5">Join Our Newsletter</h1>
         <p className="tracking-tight text-lg text-wrap max-w-[50rem] my-12 mb-16">
           Lorem ipsum, dolor sit amet g elitsadaa olsa estias magnam. Molestias

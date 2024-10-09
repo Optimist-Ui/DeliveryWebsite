@@ -18,7 +18,7 @@ const Footer = () => {
         className="lg:ml-[20%] mx-auto"
         style={{ height: "auto", width: "auto" }}
       />
-      <div className="list-none flex md:flex-row flex-col justify-center md:text-start text-center flex-wrap gap-28 text-lg py-12">
+      <div className="list-none flex md:flex-row flex-col justify-center md:text-start text-center flex-wrap gap-28 text-sm sm:text-base md:text-lg sm:py-6 py-2 md:py-12">
         <div>
           <h1 className="font-bold text-xl py-4">Company</h1>
           <li className="text-[#dedddd]">About</li>
@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-center text-[#dedddd]">
+      <p className="text-center sm:text-lg text-sm tracking-tighter text-[#dedddd]">
         Copyright © 2024 delivey | Powered by delivey
       </p>
     </div>

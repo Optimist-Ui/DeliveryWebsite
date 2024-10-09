@@ -17,10 +17,12 @@ const page = () => {
       <div className="flex justify-center items-center text-center flex-col my-12">
         <h1 className="text-4xl font-bold my-12">Do You Need Help?</h1>
         <div>
-          <div className="flex justify-center gap-12 items-center text-start">
-            <div className="text-lg">
-              <h1 className="font-bold text-4xl my-5">Get In Touch</h1>
-              <p className="tracking-tighter text-wrap max-w-[35rem] my-8">
+          <div className="flex justify-center md:flex-row flex-col-reverse md:gap-5 lg:gap-12 items-center text-center md:text-start">
+            <div className="md:text-base text-lg lg:text-lg mx-4">
+              <h1 className="font-bold lg:text-4xl text-4xl md:text-2xl my-5 md:my-3y lg:my-5">
+                Get In Touch
+              </h1>
+              <p className="tracking-tighter text-wrap max-w-[35rem]  my-8">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elitsadaa
                 olsa Lorem ipsum, dolor sit amet consectetur adipisicing
                 elitsadaa olsa libero necessitatibus reiciendis ipsamre iciendis
@@ -48,7 +50,7 @@ const page = () => {
           </div>
         </div>
         <h1 className="text-4xl font-bold my-12">General Questions</h1>
-        <div className="flex justify-center items-stretch max-w-[62%] mx-auto gap-8 my-12">
+        <div className="flex justify-center md:flex-row flex-col items-stretch max-w-[62%] mx-auto gap-8 my-12">
           <div>
             <FaqQuestion
               question="How to Change my Photo from Admin Dashboard?"

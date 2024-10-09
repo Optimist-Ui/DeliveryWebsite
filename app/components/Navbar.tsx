@@ -31,7 +31,7 @@ const Navbar = () => {
     return () => clearTimeout(timer); // Cleanup timer if component unmounts or changes
   }, [valid]);
   return (
-    <div className="relative bg-[#3A454B] py-4 px-2 md:py-6 md:px-8">
+    <div className="relative bg-[#3A454B] py-2 px-2  md:px-8">
       <div className="absolute inset-0 bg-[url('/assets/images/NavbarBackround.png')] bg-cover bg-center bg-no-repeat opacity-10"></div>
 
       {/* Call the NavLinks component */}
@@ -39,11 +39,11 @@ const Navbar = () => {
 
       {/* Main Content */}
       <div className="flex my-32 justify-center items-center w-fit mx-auto flex-wrap-reverse text-white gap-24 relative z-10">
-        <div className="text-lg">
-          <h1 className="font-bold text-5xl my-5">
+        <div className="text-lg sm:text-start text-center">
+          <h1 className="font-bold text-5xl  sm:mx-2 mx-6 my-5">
             Reliable Service <br /> Every Time
           </h1>
-          <p className="tracking-tight text-lg text-wrap max-w-[30rem] my-8">
+          <p className="tracking-tight sm:text-lg text-base md:mx-2 mx-6 text-wrap max-w-[30rem] my-8">
             Lorem ipsum, dolor sit amet g elitsadaa olsa estias magnam.
             Molestias sunt ea vel distinctio libero necessitatibus ndis ipsam.
             Molestias sunt ea vel distinctio libe.
@@ -65,7 +65,7 @@ const Navbar = () => {
                 value={input}
                 onChange={inputHandler}
                 placeholder="Enter Delivery Address"
-                className="py-3 px-4 rounded-md outline-none mr-2 border-2 text-lg font-semibold w-[78%] ml-2 text-[#333] hover:scale-[1.02] transition-all focus:border-blue-500"
+                className="px-4 py-3 rounded-md outline-none mr-2 border-2 text-sm sm:text-base md:text-lg font-semibold w-[78%] ml-2 text-[#333] hover:scale-[1.02] transition-all focus:border-blue-500"
               />
               <Button value="Go" type="submit" click={handleClick} />
             </div>
