@@ -77,7 +77,7 @@ const Carousel: React.FC = () => {
 
   return (
     <div
-      className="relative w-full max-w-[60%] pt-6 px-12 rounded-lg bg-white  mx-auto mt-[-12rem] cursor-pointer"
+      className="relative w-full max-w-[60%] pt-6 px-12 rounded-lg bg-white  mx-auto mt-[-12rem] cursor-pointer my-24"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
